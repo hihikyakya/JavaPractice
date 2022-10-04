@@ -1,6 +1,9 @@
+import Shape.Circle;
 import util.Calculator;
 import util.DoubleCalculator;
 import util.FloatCalculator;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,6 +43,8 @@ public class Main {
         System.out.println(myCar.color+","+myCar2.speed);*/
 
         //static은 같은 이름의 메소드를 여러개 만들 수 있지만, 클래스내에서는 똑같은 이름의 매소드 여러개를 못만든다...?
+
+        /*
         float f1=10.34f,f2=11.234f;
         double d1=113.34,d2=-123.345;
         double d3=-24,d4=10.2;
@@ -50,7 +55,14 @@ public class Main {
         System.out.println(doubleCalculator2.getDoubleValue("-"));
         System.out.println(floatCalculator.getFloatValue("*"));
         System.out.println(floatCalculator.getFloatValue("/"));
-        System.out.println(floatCalculator.getDoubleValue("/"));
+        System.out.println(floatCalculator.getDoubleValue("/"));*/
+
+        Scanner scanner = new Scanner(System.in);
+
+        Circle circle=new Circle();
+        circle.setRadius(scanner.nextInt());
+        circle.setName(scanner.next());
+        System.out.println(""+circle.getName()+"의 넓이는 "+circle.getSquare()+"이다.");
     }
     static void print(Object o, String e){
         System.out.print(o+e);
