@@ -1,0 +1,2 @@
+# JavaPractice
+MY Java Practice
