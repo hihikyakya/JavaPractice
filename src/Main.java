@@ -1,4 +1,5 @@
 import Shape.Circle;
+import book.Book;
 import util.Calculator;
 import util.DoubleCalculator;
 import util.FloatCalculator;
@@ -57,13 +58,32 @@ public class Main {
         System.out.println(floatCalculator.getFloatValue("/"));
         System.out.println(floatCalculator.getDoubleValue("/"));*/
 
+        /*
         Scanner scanner = new Scanner(System.in);
 
         Circle circle=new Circle();
         circle.setRadius(scanner.nextInt());
         circle.setName(scanner.next());
-        System.out.println(""+circle.getName()+"의 넓이는 "+circle.getSquare()+"이다.");
+        System.out.println(""+circle.getName()+"의 넓이는 "+circle.getSquare()+"이다.");*/
+
+        Book[] book = new Book[10];
+        for(int i=0; i<book.length; i++){
+            book[i]=new Book("1234","abcde");
+        }
+
+
+
+        int n1=1,n2=11;
+        replace(n1,n2);//안 바뀜
+        System.out.println("n1="+n1+", n2="+n2+"");
     }
+    static void replace(int n1, int n2){
+        int temp=n1;
+        n1=n2;
+        n2=temp;
+    }
+
+
     static void print(Object o, String e){
         System.out.print(o+e);
     }
