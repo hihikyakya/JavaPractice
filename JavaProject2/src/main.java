@@ -21,6 +21,9 @@ public class main {
 		StringBuffer stringBuffer1=new StringBuffer("11111");
 		stringBuffer1.replace(0,1,"abdsf"); // (0 1) 2 3 4 =>(*replace) 2 3 4
 		System.out.println(stringBuffer1);
-
+		StringBuffer stringBuffer2=new StringBuffer("My name is 김준희.");
+		String newname="wearwearw";
+		stringBuffer2.replace(stringBuffer2.length()-4,stringBuffer2.length()-1, newname);
+		System.out.println(stringBuffer2);
 	}
 }
